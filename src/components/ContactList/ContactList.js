@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import { User, Button } from './ContactList.styled';
 
 export const ContactList = ({contacts, filter, onDelete}) => {
-    // console.log(contactsData);
-    // const {contacts, filter} = contactsData;
     const normalizedFilter = filter.toLowerCase();
 
     return (
@@ -19,8 +17,4 @@ export const ContactList = ({contacts, filter, onDelete}) => {
 
 ContactList.propTypes = {
     filter: PropTypes.string.isRequired,
-    contacts: PropTypes.exact ({
-        name: PropTypes.string.isRequired,
-        number: PropTypes.number.isRequired,
-    })
-};
+  };
